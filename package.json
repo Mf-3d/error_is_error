@@ -1,0 +1,45 @@
+{
+  "name": "error_is_error",
+  "version": "0.1.0",
+  "description": "クロスプラットフォーム版",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mf-3d/error_is_error.git"
+  },
+  "keywords": [],
+  "author": "mf7cli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mf-3d/error_is_error/issues"
+  },
+  "homepage": "https://github.com/Mf-3d/error_is_error#readme",
+  "build": {
+    "appId": "tk.mf7cli.error_is_error",
+    "productName": "ErrorIsError",
+    "files": [
+      "package.json",
+      "main.js",
+      "node_modules/"
+    ],
+    "mac": {
+      "target": "dmg",
+      "icon": "build/icon.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^18.2.0",
+    "electron-builder": "^23.0.3"
+  }
+}
